@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --campus-bg: #f4f6fb;
+  --campus-surface: #ffffff;
+  --campus-border: rgba(15, 23, 42, 0.08);
+  --campus-primary: #2563eb;
+  --campus-primary-dark: #1d4ed8;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--campus-bg);
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+}
+
+.campus-login-bg {
+  background:
+    radial-gradient(circle at 15% 15%, rgba(37, 99, 235, 0.10), transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(16, 185, 129, 0.09), transparent 40%),
+    var(--campus-bg);
+}
+
+.campus-card {
+  background: var(--campus-surface);
+  border: 1px solid var(--campus-border) !important;
+  border-radius: 18px !important;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06) !important;
+}
+
+.campus-input-group {
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.campus-input-group:focus-within {
+  border-color: var(--campus-primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.14);
+}
+
+.campus-input-group .form-control,
+.campus-input-group .input-group-text {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.campus-select {
+  border-radius: 12px !important;
+  border-color: #cbd5e1 !important;
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
+}
+
+.campus-select:focus {
+  border-color: var(--campus-primary) !important;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.14) !important;
+}
+
+.campus-btn-primary {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  border: none;
+  border-radius: 12px;
+  padding: 0.72rem 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.campus-btn-primary:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+.campus-btn-primary:active {
+  transform: translateY(0);
+}
+
+.campus-navbar {
+  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.16);
+}
+
+.campus-stat-card {
+  background: var(--campus-surface);
+  border: 1px solid var(--campus-border) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04) !important;
+  transition: transform 0.18s ease, box-shadow 0.2s ease;
+}
+
+.campus-stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(15, 23, 42, 0.07) !important;
+}
+
+.campus-icon-box {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.campus-pills .nav-link {
+  border-radius: 999px !important;
+  padding: 0.5rem 1.15rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.15s ease;
+}
+
+.campus-pills .nav-link:not(.active) {
+  background-color: #ffffff;
+  color: #334155;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+}
+
+.campus-pills .nav-link.active {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #ffffff;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.24);
+}
